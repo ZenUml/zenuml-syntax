@@ -15,6 +15,7 @@
     "@markdoc/next.js": "^0.1.4",
     "@sindresorhus/slugify": "^2.1.0",
     "@tailwindcss/typography": "^0.5.2",
+    "@zenuml/core": "^2.0.4",
     "autoprefixer": "^10.4.7",
     "clsx": "^1.1.1",
     "focus-visible": "^5.2.0",

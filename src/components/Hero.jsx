@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import {Fragment, useEffect} from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import Highlight, { defaultProps } from 'prism-react-renderer'
@@ -7,21 +7,28 @@ import { ButtonLink } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
+import ZenUml from '@zenuml/core'
+import '@zenuml/core/dist/zenuml/core.css'
 
 const codeLanguage = 'javascript'
-const code = `OrderService.createOrder() {
+const code = `// Create a new diagram
+OrderService.createOrder() {
   const order = await OrderRepository.createOrder()
-  if(x) {
-    return order
-  }
 }`
 
 const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
+  { name: 'order-creation.zen', isActive: true },
   { name: 'package.json', isActive: false },
 ]
 
 export function Hero() {
+  useEffect(() => {
+    (async () => {
+      console.log('rendering')
+      const zenuml = new ZenUml(document.getElementById('zenuml-diagram'));
+      await zenuml.render(code, 'theme-blue');
+    })()
+  }, [])
   return (
     <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:-mt-[4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:-mt-[4.75rem] dark:lg:pt-[4.75rem]">
       <div className="py-16 sm:px-2 lg:relative lg:py-20 lg:px-0">
@@ -166,6 +173,10 @@ export function Hero() {
                       )}
                     </Highlight>
                   </div>
+                  <div className="rendered-diagram" id="zenuml-diagram">
+                    Diagram rendered here
+                  </div>
+
                 </div>
               </div>
             </div>
