@@ -8,14 +8,19 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "browserslist": "defaults, not ie <= 11",
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "dependencies": {
     "@docsearch/react": "^3.1.0",
     "@headlessui/react": "^1.6.5",
     "@markdoc/next.js": "^0.1.4",
     "@sindresorhus/slugify": "^2.1.0",
     "@tailwindcss/typography": "^0.5.2",
-    "@zenuml/core": "^2.0.4",
+    "@zenuml/core": "2.0.5",
     "autoprefixer": "^10.4.7",
     "clsx": "^1.1.1",
     "focus-visible": "^5.2.0",

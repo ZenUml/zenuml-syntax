@@ -11,21 +11,16 @@ import ZenUml from '@zenuml/core'
 import '@zenuml/core/dist/zenuml/core.css'
 
 const codeLanguage = 'javascript'
-const code = `// Create a new diagram
+const code = `// Create an Order
 OrderService.createOrder() {
   const order = await OrderRepository.createOrder()
 }`
-
-const tabs = [
-  { name: 'order-creation.zen', isActive: true },
-  { name: 'package.json', isActive: false },
-]
 
 export function Hero() {
   useEffect(() => {
     (async () => {
       console.log('rendering')
-      const zenuml = new ZenUml(document.getElementById('zenuml-diagram'));
+      const zenuml = new ZenUml(document.getElementById('zenuml-diagram'), true);
       await zenuml.render(code, 'theme-blue');
     })()
   }, [])
@@ -102,27 +97,6 @@ export function Hero() {
                     <circle cx="21" cy="5" r="4.5" />
                     <circle cx="37" cy="5" r="4.5" />
                   </svg>
-                  <div className="mt-4 flex space-x-2 text-xs">
-                    {tabs.map((tab) => (
-                      <div
-                        key={tab.name}
-                        className={clsx('flex h-6 rounded-full', {
-                          'bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300':
-                            tab.isActive,
-                          'text-slate-500': !tab.isActive,
-                        })}
-                      >
-                        <div
-                          className={clsx(
-                            'flex items-center rounded-full px-2.5',
-                            { 'bg-slate-800': tab.isActive }
-                          )}
-                        >
-                          {tab.name}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
                   <div className="mt-6 flex items-start px-1 text-sm">
                     <div
                       aria-hidden="true"
@@ -153,7 +127,7 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6'
+                            'flex overflow-x-auto pb-1'
                           )}
                           style={style}
                         >
@@ -173,10 +147,11 @@ export function Hero() {
                       )}
                     </Highlight>
                   </div>
-                  <div className="rendered-diagram" id="zenuml-diagram">
-                    Diagram rendered here
+                  <div className="pb-10 -mt-6 flex justify-center zenuml">
+                    <div className="rendered-diagram" id="zenuml-diagram">
+                      Diagram rendered here
+                    </div>
                   </div>
-
                 </div>
               </div>
             </div>

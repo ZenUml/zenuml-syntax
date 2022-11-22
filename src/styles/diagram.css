@@ -1,3 +1,40 @@
 .zenuml .frame {
     background: white;
 }
+
+.zenuml .sequence-diagram .lifeline .participant {
+    background-color: theme('colors.transparent');
+    border-radius: theme('borderRadius.lg');
+    border-color: theme('colors.slate.50');
+}
+
+.zenuml .sequence-diagram .lifeline .line {
+    background: linear-gradient(180deg,#0000 50%,#f5f5f6 0);
+    background-size: 1px 10px;
+}
+
+.zenuml .sequence-diagram .lifeline .participant .name {
+    color: theme('colors.slate.50');
+}
+
+.zenuml .sequence-diagram .interaction>.comments {
+    min-width: 200px;
+    color: theme('colors.slate.50');
+}
+
+.zenuml .sequence-diagram .message {
+    border-color: theme('colors.slate.50');
+}
+
+.zenuml .sequence-diagram .message .occurrence {
+    border-color: theme('colors.slate.50');
+}
+
+.zenuml .sequence-diagram .message .point>svg>polyline {
+    fill: theme('colors.slate.50');
+    stroke: theme('colors.slate.50');
+}
+
+.zenuml .sequence-diagram .message>.name {
+    color: theme('colors.pink.500');
+}
