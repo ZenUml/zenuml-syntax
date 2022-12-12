@@ -1,6 +1,7 @@
 ---
-title: Writing plugins
-description: Quidem magni aut exercitationem maxime rerum eos.
+title: "The Canvas: 3-Layer Design"
+description: The diagram is made up of three layers. From bottom to top, they are the DiagramFrame,
+the Lifeline Layer and the Message Layer.
 ---
 
 Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.

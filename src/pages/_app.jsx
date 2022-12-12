@@ -24,7 +24,7 @@ const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'The ZenUML Language', href: '/docs/language' },
     ],
   },
   {
@@ -44,9 +44,9 @@ const navigation = [
     ],
   },
   {
-    title: 'Advanced guides',
+    title: 'How we use tailwind in the renderer',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
+      { title: 'The Canvas: the three-layer design', href: '/docs/the-canvas-3-layer-design' },
       { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
       { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
       { title: 'Testing', href: '/docs/testing' },

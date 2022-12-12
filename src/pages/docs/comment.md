@@ -49,3 +49,13 @@ A
 ```
 
 // Learn more about styling and themes
+
+## Advanced: parsing comment
+
+Comment is defined in the lexer g4 file.
+
+```g4
+COMMENT
+ : '//' .*? '\n' -> channel(COMMENT_CHANNEL)
+ ;
+```
