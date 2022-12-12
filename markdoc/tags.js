@@ -1,7 +1,16 @@
 import { Callout } from '@/components/Callout'
 import { LinkGrid } from '@/components/LinkGrid'
+import { Button } from '@/components/Button'
+import { ThreeLayer} from "@/components/ThreeLayer";
+
 
 const tags = {
+  'three-layer': {
+    render: ThreeLayer
+  },
+  button: {
+    render: Button,
+  },
   callout: {
     attributes: {
       title: { type: String },
