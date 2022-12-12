@@ -31,26 +31,19 @@
 
 .box {
   transform: rotateX(55deg) rotateZ(45deg);
+  background-color: #D8DAD9;
+  box-shadow: 1px 1px 0 #D8DAD9, 2px 2px 0 #D8DAD9, 3px 3px 0 #D8DAD9, 4px 4px 0 #D8DAD9, 5px 5px 0 #D8DAD9;
 }
 
 .lifeline-layer {
-  animation: transform2 2s ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  box-shadow: 1px 1px 0 darken(green, 4%),
-  2px 2px 0 darken(green, 4%),
-  3px 3px 0 darken(green, 4%),
-  4px 4px 0 darken(green, 4%),
-  5px 5px 0 darken(green, 4%);
+  background-color: #AEA690;
+  box-shadow: 1px 1px 0 #AEA690, 2px 2px 0 #AEA690, 3px 3px 0 #AEA690, 4px 4px 0 #AEA690, 5px 5px 0 #AEA690;
 }
 
 .message-layer {
   animation: transform 2s ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  box-shadow: 1px 1px 0 darken(#2d84fc, 4%),
-  2px 2px 0 darken(#2d84fc, 4%),
-  3px 3px 0 darken(#2d84fc, 4%),
-  4px 4px 0 darken(#2d84fc, 4%),
-  5px 5px 0 darken(#2d84fc, 4%);
+  background-color: #324939;
+  box-shadow: 1px 1px 0 #324939, 2px 2px 0 #324939, 3px 3px 0 #324939, 4px 4px 0 #324939, 5px 5px 0 #324939;
 }
