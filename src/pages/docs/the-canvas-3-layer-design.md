@@ -1,21 +1,31 @@
 ---
 title: "The Canvas: 3-Layer Design"
-description: The diagram is made up of three layers. From bottom to top, they are the DiagramFrame, the Lifeline Layer and the Message Layer.
+description: The diagram is made up of three layers. 
 ---
-{% three-layer type="warning" title="Oh no! Something bad happened!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
-{% /three-layer %}
+{% three-layer type="warning" title="Oh no! Something bad happened!" /%}
 
+## 3 Layers
 
----
+The diagram is rendered in three layers. From bottom to top, they are the **DiagramFrame**, 
+the **Lifeline Layer** and the **Message Layer**.
 
-## Quis vel iste dicta
+### How to stack the layers
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
+Stacking layers is an often seen technique in UI design. For example, many website have a Hero section
+like below:
 
-### Et pariatur ab quas
+![Hero section with stacked layers](../../images/hero-stacking-layers.png)
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+My first choice was to use absolute positioning.
+
+```html
+<div class="sequence-diagram">
+    <div class="lifeline-layer absolute">
+    </div>
+    <div class="message-layer">
+    </div>
+</div>
+```
 
 ```js
 /** @type {import('@tailwindlabs/lorem').ipsum} */
