@@ -42,14 +42,14 @@ export function Hero() {
             </div>
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Diagram as Code
+                ZenUML, Diagram as Code
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Keep your diagrams in sync with your code easily.
               </p>
               <div className="mt-8 flex space-x-4 md:justify-center lg:justify-start">
                 <ButtonLink href="/">Get started</ButtonLink>
-                <ButtonLink href="/" variant="secondary">
+                <ButtonLink href="https://github.com/ZenUml/core" variant="secondary">
                   View on GitHub
                 </ButtonLink>
               </div>
