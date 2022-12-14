@@ -14,16 +14,16 @@ Also known as: Stacking Elements, Layering Elements
 ## Intent
 Stack an element on top of another element.
 
-{% three-layer type="warning" title="Oh no! Something bad happened!" /%}
-
 ## Problem
 The normal flow of the document is from top to bottom. In some cases, we want to stack an element 
 on top of another element. When we do this, it must not create extra gaps or margins (more details below).
 
 ### Example in ZenUML
 
-The diagram is rendered in three layers. From bottom to top, they are the **DiagramFrame**, 
+The diagram is rendered in three layers. From bottom to top, they are the **Background**, 
 the **Lifeline Layer** and the **Message Layer**.
+
+{% three-layer type="warning" title="Oh no! Something bad happened!" /%}
 
 ## Solution
 
