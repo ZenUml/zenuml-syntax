@@ -2,10 +2,6 @@
 title: Pizza Topping
 description: Render one element on top of another. 
 ---
-{% callout type="note" title="Written in the form of Pattern Language" %}
-This article is written in the form of Pattern Language.
-Each article contains four sections: Intent, Problem, Solution, and Discussion.
-{% /callout %}
 
 ![img_1.png](../../images/pizza-topping.png)
 
