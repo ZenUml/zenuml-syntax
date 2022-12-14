@@ -44,8 +44,9 @@ const navigation = [
     ],
   },
   {
-    title: 'How we use tailwind in the renderer',
+    title: 'Tailwind in Real Life',
     links: [
+      { title: 'Width and Height', href: '/docs/width-and-height' },
       { title: 'The Canvas: the three-layer design', href: '/docs/the-canvas-3-layer-design' },
       { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
       { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
