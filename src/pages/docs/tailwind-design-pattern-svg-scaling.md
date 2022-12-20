@@ -12,7 +12,12 @@ The width and height attributes of an SVG element may not necessarily scale the 
 fit its container. This can be seen in the following example:
 
 ![SVG Scale Problem](../../images/svg-scale-problem.png)
-https://codepen.io/PengXiao/pen/xxJxagZ
+Checkout on [CodePen](https://codepen.io/PengXiao/pen/xxJxagZ)
+
+Your expectation is most likely that the SVG element will scale to fit the container.
+
+![img.png](../../images/svg-scale-expectation.png)
+Checkout on [CodePen](https://codepen.io/PengXiao/pen/xxJxmZG)
 
 ### Example in ZenUML
 
