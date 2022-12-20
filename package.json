@@ -15,6 +15,7 @@
     "not dead"
   ],
   "dependencies": {
+    "@codesandbox/sandpack-react": "^1.18.0",
     "@docsearch/react": "^3.1.0",
     "@headlessui/react": "^1.6.5",
     "@markdoc/markdoc": "^0.2.1",

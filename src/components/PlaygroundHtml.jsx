@@ -1,5 +1,5 @@
 import { Sandpack } from '@codesandbox/sandpack-react';
-import { VUE_TEMPLATE_3} from './vue3-template'
+
 export function PlaygroundHtml({ code, language, ...props }) {
   return (
       <Sandpack template="vue3" files={{
