@@ -40,6 +40,6 @@
     "prettier-plugin-tailwindcss": "^0.1.11"
   },
   "volta": {
-    "node": "14.21.2"
+    "node": "16.19.0"
   }
 }
