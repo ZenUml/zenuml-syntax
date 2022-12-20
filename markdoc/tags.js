@@ -2,9 +2,13 @@ import { Callout } from '@/components/Callout'
 import { LinkGrid } from '@/components/LinkGrid'
 import { Button } from '@/components/Button'
 import { ThreeLayer} from "@/components/ThreeLayer";
+import {PlaygroundHtml} from "@/components/PlaygroundHtml";
 
 
 const tags = {
+  'playground': {
+    render: PlaygroundHtml
+  },
   'three-layer': {
     render: ThreeLayer
   },
