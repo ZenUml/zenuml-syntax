@@ -38,5 +38,8 @@
     "eslint-config-next": "12.1.6",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11"
+  },
+  "volta": {
+    "node": "14.21.2"
   }
 }
