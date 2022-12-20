@@ -37,6 +37,7 @@ const navigation = [
     title: 'Tailwind Design Patterns',
     links: [
       { title: 'Pizza Topping', href: '/docs/tailwind-design-pattern-pizza-topping' },
+      { title: 'SVG Scaling', href: '/docs/tailwind-design-pattern-svg-scaling' },
     ],
   },
 ]

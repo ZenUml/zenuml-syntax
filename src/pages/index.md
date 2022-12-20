@@ -6,6 +6,8 @@ description: Keep your diagrams in sync with your code easily
 
 Learn how to use ZenUML to create sequence diagrams and how ZenUML is built. Work in Progress.
 
+{% playground /%}
+
 {% link-grid %}
 
 {% link-grid-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
